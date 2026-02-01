@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { getGeminiResponse } from '../services/geminiService';
-// Added Globe to the imported lucide-react components
+import { getGeminiResponse } from '../services/geminiService.ts';
 import { Search, Map, ChevronRight, Loader2, Globe } from 'lucide-react';
 
 const WorldSync: React.FC = () => {

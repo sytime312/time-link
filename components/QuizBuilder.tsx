@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { getGeminiResponse } from '../services/geminiService';
+import { getGeminiResponse } from '../services/geminiService.ts';
 import { BrainCircuit, CheckCircle2, RotateCcw, Loader2 } from 'lucide-react';
 
 const QuizBuilder: React.FC = () => {

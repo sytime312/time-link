@@ -1,5 +1,5 @@
 
-import { GoogleGenAI } from "@google/genai";
+import {GoogleGenAI} from "@google/genai";
 
 const SYSTEM_INSTRUCTION = `
 당신은 역사적 통찰력이 뛰어난 'AI 세계사 가이드'입니다. 
@@ -12,7 +12,7 @@ const SYSTEM_INSTRUCTION = `
 
 export const getGeminiResponse = async (prompt: string, modelType: 'flash' | 'pro' = 'flash') => {
   // Use the API key directly from process.env.API_KEY as per the library guidelines.
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
   const modelName = modelType === 'pro' ? 'gemini-3-pro-preview' : 'gemini-3-flash-preview';
   
   try {
@@ -24,7 +24,7 @@ export const getGeminiResponse = async (prompt: string, modelType: 'flash' | 'pr
       },
     });
 
-    // Access the extracted string directly via the .text property.
+    // Directly access the .text property from GenerateContentResponse
     return response.text || "죄송합니다. 답변을 생성하지 못했습니다.";
   } catch (error) {
     console.error("Gemini API Error:", error);

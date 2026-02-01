@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
-import { TabType } from './types';
-import HistoryChat from './components/HistoryChat';
-import WorldSync from './components/WorldSync';
-import QuizBuilder from './components/QuizBuilder';
+import { TabType } from './types.ts';
+import HistoryChat from './components/HistoryChat.tsx';
+import WorldSync from './components/WorldSync.tsx';
+import QuizBuilder from './components/QuizBuilder.tsx';
 import { Compass, Globe, BookOpen, Clock } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -73,7 +73,7 @@ const App: React.FC = () => {
 
       {/* Footer */}
       <footer className="mt-12 text-center text-stone-400 text-sm pb-8">
-        <p>© 2024 TimeLink AI World History. 과 거를 통해 미래를 배웁니다.</p>
+        <p>© 2024 TimeLink AI World History. 과거를 통해 미래를 배웁니다.</p>
       </footer>
     </div>
   );

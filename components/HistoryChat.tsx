@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { getGeminiResponse } from '../services/geminiService';
+import { getGeminiResponse } from '../services/geminiService.ts';
 import { Send, User, Bot, Loader2 } from 'lucide-react';
 
 const FIGURES = [
